@@ -18,7 +18,6 @@ for event in longpool.listen():
         if event.to_me:
             msg = event.text.lower()
             id = event.user_id
-            print(str(id))
             send_some_msg(id,"Ваше сообещние доставлено в базу, дальше оно пойдет в дискорд экфару")
 
             count = collection.count_documents({})
